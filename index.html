@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The War Zone</title>
+  </head>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    /* CSS Reset  */
+    body {
+      font-family: "Roboto Slab", serif;
+      margin: 0%;
+      padding: 0%;
+      background: url("images/bgtheme5.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: aliceblue;
+    }
+
+    .left {
+      /* border: 2px solid red; */
+      display: inline-block;
+      position: absolute;
+      left: 32px;
+      top: 20px;
+    }
+    .left img {
+      width: 180px;
+      /* filter: invert(100%); */
+      border-radius: 50%;
+    }
+
+    .left div {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .mid {
+      /* border: 2px solid green; */
+      /* display: inline-block; */
+      display: block;
+      width: 60%;
+      margin: 20px auto;
+      /* background-color: #0d0b0bdb; */
+    }
+
+    .navbar {
+      display: inline-block;
+    }
+
+    .navbar li {
+      display: inline-block;
+      font-size: 20px;
+    }
+
+    .navbar li a {
+      text-decoration: none;
+      color: aliceblue;
+      padding: 14px 10px;
+      font-size: 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      background-color: #3e2727ad;
+      color: wheat;
+    }
+
+    .right {
+      /* border: 2px solid yellow; */
+      display: inline-block;
+      position: absolute;
+      right: 15px;
+      top: 20px;
+    }
+
+    .btn {
+      margin: 9px;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      padding: 5px 14px;
+      border-radius: 5px;
+      font-size: 15px;
+      font-family: "Roboto Slab", serif;
+      border: 1px solid white;
+    }
+
+    .btn:hover {
+      background-color: #3e2727ad;
+    }
+
+    .container {
+      border: 2px solid white;
+      margin: 117px 56px;
+      width: 34%;
+      padding: 80px 18px;
+      border-radius: 20px;
+    }
+    .form-group input {
+      font-family: "Roboto Slab", serif;
+      text-align: center;
+      margin: 12px auto;
+      width: 90%;
+      display: block;
+      padding: 4px;
+      font-size: 20px;
+      border-radius: 10px;
+    }
+
+    .container h3 {
+      text-align: center;
+      margin: 35px;
+    }
+
+    .container .btn {
+      display: block;
+      width: 390px;
+      margin: 35px auto;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <!-- left box for logo -->
+      <div class="left">
+        <img src="images/gym.webp" alt="Gym logo" />
+        <div>THE WAR ZONE,</div>
+        <div>Train like a COMMANDO</div>
+      </div>
+      <!-- mid box for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#"> About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#"> Trainers</a></li>
+          <li><a href="#"> Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- right box for buttons -->
+      <div class="right">
+        <button class="btn">Call Us</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h3>JOIN THE BEST GYM OF MUMBAI NOW!</h3>
+      <form action="noaction.php"></form>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Name" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Age" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Gender" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Locality" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Phone Number" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Email" />
+      </div>
+      <button class="btn">Submit</button>
+    </div>
+  </body>
+</html>
